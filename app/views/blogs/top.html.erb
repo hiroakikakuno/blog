@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<%# 参照：view/layouts/application.html.erb %>
+</head>
+<body>
+    <div class="contents">
+      <%= render("blogs") %>
+      <%= paginate(@content) %>
+  </div>
+  
+
+</body>
+</html>

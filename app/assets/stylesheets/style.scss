@@ -1,0 +1,170 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+       -o-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.hedder {
+  width: 100vw;
+  list-style: none;
+  background: linear-gradient(-135deg, #E4A972, #9941D8);
+  font-weight: bold;
+  text-align: center;
+    
+  }
+  .logo{
+    color: white;
+    font-size: 26px;
+    line-height: 280px;
+    text-decoration: none;
+  }
+ 
+ .menu-list{
+  background-color: #24292e;;
+  li {
+    display: inline-block;
+    width: 25%;
+    list-style: none;
+    color: white;  
+    line-height: 50px;
+  }
+  .post{
+    color: white; 
+    text-decoration: none;
+  }
+ }
+
+
+  .message_box{
+    margin: 25px auto;
+    width: 700px;
+    background-color: #fafbfc;
+    border: solid 2px #24292e;
+    // border: solid 2px #c0d3eb;
+    border-radius: 5px;
+    // padding: 0.5em 1em;
+    .name{
+      padding: 0 10px 10px 10px ;
+      border-bottom: solid 1px #24292e;
+      font-size: 12px;
+      
+    }
+    .message_data{
+      padding: 0 1em;
+      .title{
+        border-bottom: 1px solid #d1d5da;
+        font-size: 20px;
+        // font-weight: bold;
+        color: #24292e;
+        font-family: "Hiragino Sans";
+        font-weight: 750;
+        padding-bottom: 10px;
+      }
+    }
+  }
+
+  .more_list{
+    list-style: none;
+      .github{
+        padding-top: 10px;
+        position: relative;
+        left: 510px;
+      }
+  
+      .edit{
+        padding: 0.3em 1em;
+        // border: solid 1px #9941D8;
+        display: inline-block;
+        position: relative;
+        left: 470px;
+        border-radius: 3px;
+        background: linear-gradient(-135deg, #E4A972, #9941D8);
+      }
+
+      .delite{
+        padding: 0.3em 1em;
+        // border: solid 1px #9941D8;
+        display: inline-block;
+        position: relative;
+        left: 470px;
+        border-radius: 3px;
+        background: linear-gradient(-135deg, #E4A972, #9941D8);
+      }
+
+      .font{
+        color: #fafbfc; 
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: bold;
+      }
+
+  }
+
+ 
+
+
+// ＊＊＊＊devise関係＊＊＊＊
+// ＜登録画面ビュー＞
+
+.d-view{
+
+  text-align:center;
+  padding-bottom: 100px ;
+  margin: 25px auto;
+  width: 700px;
+  background-color: #fafbfc;
+  border: solid 2px #24292e;
+  border-radius: 5px;
+}
+  .d-title{
+    font-size: 25px;
+    display: inline-block;
+    border-bottom: solid 1px #fafbfc;
+    text-align: center;
+    padding: 0.5em 1em;
+  }
+
+.field{
+  margin: 25px auto;
+ 
+  
+}
+
+.actions{
+  padding-top: 70px;
+}
+
+.n-btn{
+  padding: 10px ;
+  width: 500px;
+  border-radius: 10px; 
+  font-size: 15px;
+  border: solid 1px #d1d5da;
+}
+
+.s-btn{
+  padding: 10px 100px;
+  width: 500px;
+  border-radius: 10px;
+  background: linear-gradient(-135deg, #E4A972, #9941D8);
+  color: #fafbfc; 
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  border: solid 0px;
+}
+
+
+
+.footer{
+  position: fixed;
+  bottom: 40px;
+  width: 500px;
+.top-github{
+  // float: right;
+  
+
+}
+}

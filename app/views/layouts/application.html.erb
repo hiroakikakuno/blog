@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>G-Blog</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+
+  </head> 
+
+  <body>
+    <header>
+
+    <nav class ="lime">
+      <div class="hedder">
+        <a href="/" class="logo"><img src="http://faaastaid.com/wp/wp-content/uploads/2019/09/GitHub-Mark2.png" width="2%" height="2%" class="github" > BLOG</a>        
+          <% if user_signed_in? %>
+            <ul id="nav-mobile" class="menu-list">
+              <li><u>ログイン中： <%= current_user.nickname %>さん </u></li>
+              <li><%= link_to "ログアウト", destroy_user_session_path, method: :delete ,class: 'post' %></li>
+              <li><a class="post" href="/blog/new">投稿する</a></li>
+            </ul>
+          <% else %>
+            <ul id="nav-mobile" class="menu-list">
+              <li><%= link_to "ログイン", new_user_session_path, class: 'post' %></li>
+              <li><%= link_to "新規登録", new_user_registration_path, class: 'post' %></li>
+            </ul>
+        <% end %>
+          
+      </div>
+    </nav>
+  <script type="text/javascript" src="./app.js"></script>
+  </header>
+
+    <%= yield %>
+
+
+<footer class ="footer">
+  <% if user_signed_in? %>
+  <p><img src="http://faaastaid.com/wp/wp-content/uploads/2019/09/github4.png" width="50%" height="50%" class="top-github" ></p>
+   <% else %>
+  <p><img src="http://faaastaid.com/wp/wp-content/uploads/2019/09/github3.png" width="50%" height="50%" class="top-github" ></p>
+  <% end %>
+  </footer>
+
+  </body>
+
+</html>

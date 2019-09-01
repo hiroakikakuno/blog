@@ -1,0 +1,16 @@
+<div class="d-view">
+  <a class="d-title">編集する</a>
+    <%= form_tag("/blog/#{@content.id}", method: :patch ) do %>
+     
+     <div class="field">
+      <input placeholder="title" type="text" name="title" value="<%= @content.title %>" autofocus="true" class="n-btn" >
+      </div>
+       <div class="field">
+      <textarea cols="50" name="text" placeholder="text" rows="20" class="n-btn" ><%= @content.text %></textarea>
+      </div>
+       <div class="actions">
+      <input type="submit" value="編集を完了する" class="s-btn">
+      </div>
+    <% end %>
+    <%# <a href="/">トップページへ戻る</a></li> %>
+  </div>

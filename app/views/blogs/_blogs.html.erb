@@ -1,0 +1,32 @@
+<% @content.each do |bloglist| %>
+
+  <div class="message_box">
+    <p class="name">投稿者：
+      <%= bloglist.user.nickname %>
+      </p>
+      <div class="message_data">
+        <p class="title">#
+          <%= bloglist.title %>
+          </p>
+        <p class="text">
+        <%= simple_format(bloglist.text) %>
+          </p>
+      </div>
+    <ul class="more_list">
+      <% if user_signed_in? %>
+      <% if bloglist.user_id == current_user.id %>
+
+      <p><img src="https://github.githubassets.com/images/modules/logos_page/Octocat.png" width="10%" height="10%" class="github" ></p>
+
+      <li class="edit">
+          <%= link_to '+ 編集', "/blog/#{bloglist.id}/edit", method: :get ,class: 'font'%>
+        </li>
+      <li class="delite">
+          <%= link_to '- 削除', "/blog/#{bloglist.id }", method: :delete ,class: 'font' %>
+        </li>
+         <% end %>
+      <% end %>
+    </ul>
+  </div>
+</div>
+<% end %>

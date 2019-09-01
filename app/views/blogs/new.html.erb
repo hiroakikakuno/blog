@@ -1,0 +1,23 @@
+
+<div class="d-view">
+    <a class="d-title">
+      投稿する
+    </a>
+  <%= form_tag('/blog', method: :post) do %>
+  <div class="field">
+    <input placeholder="記事タイトル" type="title" name="title" class="n-btn" >
+    </div>
+
+  <div class="field">
+    <textarea cols="50" name="text" placeholder="内容" rows="20" class="n-btn" ></textarea>
+    </div>
+
+  <div class="actions">
+    <input type="submit" value="投稿する" class="s-btn" >
+    </div>
+  <% end %>
+  <%# <p></p>
+  <a href="/">トップページへ戻る</a></li> %>
+</div>
+
+
